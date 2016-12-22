@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".LoginFragment">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Mobile Number"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:ems="10"
+        android:id="@+id/et_phone_number"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textStyle="bold"
+        android:ems="10"
+        android:textColor="@color/colorPrimaryDark"
+        android:hint="Password"
+        android:id="@+id/et_password"
+        android:layout_gravity="center_horizontal" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="30dp"
+            android:textStyle="bold"
+           android:layout_marginTop="20dp"
+            android:id="@+id/bt_login"
+            android:textColor="@color/bttextcolor"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorPrimary"
+             />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="30dp"
+            android:textStyle="bold"
+           android:layout_marginTop="5dp"
+            android:textColor="@color/bttextcolor"
+            android:id="@+id/bt_register"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorPrimary"/>
+
+
+</LinearLayout>

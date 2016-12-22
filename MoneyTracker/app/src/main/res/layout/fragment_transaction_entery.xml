@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="com.example.moneytracker.TransactionEntery">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Name"
+        android:ems="10"
+        android:id="@+id/name"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignEnd="@+id/button2"
+
+        android:layout_marginRight="105dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Mobile no"
+        android:ems="10"
+        android:id="@+id/mobno"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:hint="Amount"
+        android:id="@+id/amount"
+        android:layout_below="@+id/mobno"
+        android:outlineProvider="paddedBounds"
+        android:textColor="@color/colorPrimaryDark"
+
+        android:textSize="20dp"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:id="@+id/button2"
+        android:textColor="@color/bttextcolor"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/amount"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Get Contact"
+        android:background="@color/colorPrimary"
+        android:textStyle="bold"
+        android:id="@+id/btn_getContact"
+        android:layout_above="@+id/mobno"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/bttextcolor"/>
+</RelativeLayout>
